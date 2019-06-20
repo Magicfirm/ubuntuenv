@@ -13,7 +13,7 @@ RUN apt-get update && \
 RUN pip install --upgrade pip
 
 # - Install web server
-RUN pip install web.py uwsgi simplejson requests DBUtils validate_email uwsgi jinja2 python-alipay-sdk redis shortuuid -i https://pypi.douban.com/simple
+RUN pip install web.py uwsgi simplejson requests DBUtils validate_email uwsgi jinja2 python-alipay-sdk redis shortuuid netaddr -i https://pypi.douban.com/simple
 
 
 
