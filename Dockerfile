@@ -7,7 +7,7 @@ MAINTAINER JIN TAO <jeffkyjin@magicfirm.com>
 
 # Install relates.
 RUN apt-get update && \
-    apt-get -y install python-pip wget mysql-client python-mysqldb nginx supervisor locales htop
+    apt-get -y install python-pip wget mysql-client python-mysqldb nginx supervisor locales htop tzdata
   
 # - update pip
 RUN pip install --upgrade pip
@@ -18,5 +18,8 @@ RUN pip install web.py uwsgi simplejson requests DBUtils validate_email uwsgi ji
 
 # - Install related libs
 RUN pip install python-alipay-sdk redis shortuuid netaddr python-weixin xlrd blinker Pillow -i https://pypi.douban.com/simple
+
+# setting timezone
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 
