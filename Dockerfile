@@ -7,7 +7,7 @@ MAINTAINER JIN TAO <jeffkyjin@magicfirm.com>
 
 # Install relates.
 RUN apt-get update && \
-    apt-get -y install python-pip wget mysql-client python-mysqldb nginx supervisor locales htop tzdata
+    apt-get -y install python-pip wget mysql-client python-mysqldb nginx supervisor locales htop tzdata python-jwt
   
 # - update pip
 RUN pip install --upgrade pip
