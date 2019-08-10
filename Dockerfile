@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get -y install python-pip wget mysql-client python-mysqldb nginx supervisor locales htop tzdata python-jwt
   
 # - update pip
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip -i https://pypi.douban.com/simple
 
 # - Install web server
 RUN pip install web.py uwsgi simplejson requests DBUtils validate_email uwsgi jinja2 -i https://pypi.douban.com/simple
