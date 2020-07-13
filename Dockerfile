@@ -17,7 +17,7 @@ RUN pip install web.py uwsgi simplejson requests DBUtils validate_email uwsgi ji
 
 
 # - Install related libs
-RUN pip install python-alipay-sdk==1.1 redis shortuuid netaddr python-weixin xlrd blinker Pillow -i https://pypi.douban.com/simple
+RUN pip install python-alipay-sdk==1.11 redis shortuuid netaddr python-weixin xlrd blinker Pillow -i https://pypi.douban.com/simple
 
 # setting timezone
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
